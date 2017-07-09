@@ -1,0 +1,27 @@
+<head>
+    <link	href = "assets/style.css" rel="stylesheet">
+	<script	src  = "player.js"        ></script>
+	<title>Phene.co / Player</title>
+</head>
+<body>
+	<div id="body">
+
+	<div class="post">
+        <div class="post-header">
+            <a><img class="post-avatar"></a>
+            <div class="post-name"><a><b>Player Sample</b></a></div>
+            <div class="post-time"><a>Audio</a></div>
+        </div>
+        <div class="post-content">
+			<div id="aud"></div>
+			<script>
+				var src		= "assets/audio.wav",
+					o		= {},
+					player	= _g.pl.audio(src,o);
+				_i('aud').appendChild(player);
+			</script>
+		</div>
+    </div>
+
+	</div>
+</body>
